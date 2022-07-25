@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    background:linear-gradient(45deg, #EEEEEE, #FAF8F9, #FFFFFF);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+main {
+    display: flex;
+    justify-content: center;
+    padding: 35px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);
+    padding: 20px;
+    color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-image {
+    height: 100%;
+    margin-right: 10px;
 }
+
+.header-title {
+    font-size: 1.5rem;
+    margin-right: auto;
+}
+
+.header-project {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.form {
+    display: grid;
+    grid-template: 1fr 1fr;
+    gap: 1em;
+}
+
+.form-title {
+    margin: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-input {
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+    text-indent: 5px;
+    padding: 10px;
+}
+
+.form-btn {
+    grid-column: 1 / -1;
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 5px;
+    background: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);
+    border: none;
+    cursor: pointer;
+    color: black;
+    padding: 10px;
+}
+
+.meme {
+    position: relative;
+}
+
+.meme-image {
+    max-width: 100%;
+    align-content: center;
+    border-radius: 3px;
+}
+
+.meme-text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+            2px 2px 0 #000,
+            -2px -2px 0 #000,
+            2px -2px 0 #000,
+            -2px 2px 0 #000,
+            0 2px 0 #000,
+            2px 0 0 #000,
+            0 -2px 0 #000,
+            -2px 0 0 #000,
+            2px 2px 5px #000;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
+}
+
