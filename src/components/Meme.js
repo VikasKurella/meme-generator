@@ -1,5 +1,4 @@
 import {useEffect, useState} from "react";
-import Main from "./Main";
 
 function Meme() {
 
@@ -43,7 +42,6 @@ function Meme() {
     }
 
     return (
-        allMemes.length === 0 ? <Main /> :
         <main>
             <div className='form'>
                 <input
