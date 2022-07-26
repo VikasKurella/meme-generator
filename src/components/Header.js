@@ -1,7 +1,6 @@
 import Image from '../images/troll-face.png'
 
-function Header() {
-
+const Header = () => {
     return (
         <header className='header'>
             <img src={Image} className='header-image' onClick='./' alt='troll-face'/>

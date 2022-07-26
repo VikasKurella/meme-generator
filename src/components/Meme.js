@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 
-function Meme() {
+const Meme = () => {
 
     const [meme, setMeme] = useState({
         'topText': '',
@@ -8,6 +8,7 @@ function Meme() {
         'name': '',
         'randomImage': 'http://i.imgflip.com/1bij.jpg'
     })
+
     const [allMemes, setAllMemes] = useState([])
 
     useEffect(() => {
@@ -19,10 +20,7 @@ function Meme() {
         getMemes()
     }, [])
 
-    console.log(allMemes)
-
-
-    function getMemeImage() {
+    const getMemeImage = () => {
         const randomNumber = Math.floor(Math.random() * allMemes.length)
         const name = allMemes[randomNumber].name
         const url = allMemes[randomNumber].url
@@ -33,7 +31,7 @@ function Meme() {
         }))
     }
 
-    function handleClick(event) {
+    const handleClick = (event) => {
         const { name, value } = event.target
         setMeme(prevMeme => ({
             ...prevMeme,
