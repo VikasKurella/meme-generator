@@ -12,7 +12,7 @@ const Meme = () => {
     const [allMemes, setAllMemes] = useState([])
 
     useEffect(() => {
-        async function getMemes() {
+        const getMemes = async () => {
             const res = await fetch('https://api.imgflip.com/get_memes')
             const data = await res.json()
             setAllMemes(data.data.memes)
