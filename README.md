@@ -1,6 +1,6 @@
 # Meme Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project allows to generate random memes. 
 
 ## Available Scripts
 
